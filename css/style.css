@@ -1,0 +1,230 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+}
+
+.hr {
+  height: 2px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.hr-line {
+  height: 2px;
+  width: 130px;
+  background-color: #ff2d2d;
+}
+
+.btn-default {
+  color: #ffffff;
+  background-color: #ff2d2d;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+  font-weight: 700;
+  font-size: 1.125em;
+  padding: 20px 60px;
+}
+
+.btn-default:hover {
+  color: #e2e2e2;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+
+h2 {
+  font-size: 2.625em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0px;
+}
+
+.header {
+  background-color: #f6f2f2;
+}
+
+.header-navbar {
+  background-color: #313030;
+}
+
+.header-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-menu-list a {
+  color: #e0e0e0;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+
+.header-menu-list a:hover {
+  text-decoration: none;
+  color: #616161;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+
+.header-menu-list-active-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ff3f40;
+  width: 90px;
+  height: 90px;
+}
+
+.header-content {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.header-content-right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-content iframe {
+  -webkit-box-shadow: 0px 0px 98px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 98px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 98px -22px rgba(0, 0, 0, 0.75);
+}
+
+.header-content h1 {
+  font-size: 3.75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.header-content p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.whywe {
+  margin-top: 115px;
+}
+
+.whywe-left-side p,
+.whywe-left-side h3 {
+  margin: 0;
+}
+
+.whywe-left-side h3 {
+  font-size: 2.375em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.whywe-left-side p {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.whywe-left-side .btn-whywe {
+  background-color: transparent;
+  color: #ff2d2d;
+  border: #ff2d2d solid 2px;
+}
+
+.whywe-section {
+  margin-bottom: 50px;
+}
+
+.whywe-section i {
+  color: rgba(255, 59, 75, 0.8);
+  font-size: 40px;
+}
+
+.whywe-section h5 {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+}
+
+.whywe-section p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+}
+
+.whywe-wrap {
+  margin-bottom: 110px;
+}
+
+.feture {
+  margin-top: 110px;
+}
+
+.feture-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.feture-title p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,187 @@
+// VARIBLE
+$pColor: #000000;
+$headBgColor: #f6f2f2;
+$headNavBar: #313030;
+$aColor: #e0e0e0;
+$btnBgColor: #ff2d2d;
+
+// MIXINS
+
+@mixin alphaPar($a) {
+  color: rgba($pColor, $a);
+  margin-bottom: 0px;
+}
+
+// Global Settings
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $pColor;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+}
+
+.hr {
+  height: 2px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.hr-line {
+  height: 2px;
+  width: 130px;
+  background-color: $btnBgColor;
+}
+
+.btn-default {
+  color: #ffffff;
+  background-color: $btnBgColor;
+  transition: color ease 0.3s;
+  font-weight: 700;
+  font-size: 1.125em;
+  padding: 20px 60px;
+  &:hover {
+    color: #e2e2e2;
+    transition: color ease 0.3s;
+  }
+}
+
+h2 {
+  font-size: 2.625em;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include alphaPar(0.8);
+}
+
+// CSS
+
+.header {
+  background-color: $headBgColor;
+  &-navbar {
+    background-color: $headNavBar;
+  }
+  &-menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      color: $aColor;
+      font-size: 0.875em;
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: color ease 0.3s;
+      &:hover {
+        text-decoration: none;
+        color: darken($aColor, 50);
+        transition: color ease 0.3s;
+      }
+    }
+    &-active-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ff3f40;
+      width: 90px;
+      height: 90px;
+    }
+  }
+  &-content {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &-right-section {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    iframe {
+      -webkit-box-shadow: 0px 0px 98px -22px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 98px -22px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 98px -22px rgba(0, 0, 0, 0.75);
+    }
+    h1 {
+      font-size: 3.75em;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+    p {
+      @include alphaPar(0.7);
+      margin-bottom: 50px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.whywe {
+  margin-top: 115px;
+  &-left-side {
+    p,
+    h3 {
+      margin: 0;
+    }
+    h3 {
+      font-size: 2.375em;
+      color: rgba(#000, 0.8);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+    .btn-whywe {
+      background-color: transparent;
+      color: $btnBgColor;
+      border: $btnBgColor solid 2px;
+    }
+  }
+
+  &-section {
+    margin-bottom: 50px;
+    i {
+      color: rgba(255, 59, 75, 0.8);
+      font-size: 40px;
+    }
+    h5 {
+      margin-top: 30px;
+      margin-bottom: 24px;
+      @include alphaPar(0.7);
+    }
+    p {
+      @include alphaPar(0.7);
+    }
+  }
+  &-wrap {
+    margin-bottom: 110px;
+  }
+}
+
+.feture {
+  margin-top: 110px;
+  &-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+      @include alphaPar(0.7);
+      margin-top: 22px;
+      margin-bottom: 35px;
+    }
+  }
+}
