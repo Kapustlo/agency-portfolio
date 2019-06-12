@@ -17,6 +17,11 @@ li {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .hr {
@@ -29,6 +34,16 @@ a {
   height: 2px;
   width: 130px;
   background-color: #ff2d2d;
+  -webkit-transition: width ease-in-out 1s;
+  -o-transition: width ease-in-out 1s;
+  transition: width ease-in-out 1s;
+}
+
+.hr-line:hover {
+  -webkit-transition: width ease-in-out 1s;
+  -o-transition: width ease-in-out 1s;
+  transition: width ease-in-out 1s;
+  width: 300px;
 }
 
 .btn-default {
@@ -225,6 +240,75 @@ h2 {
   margin-bottom: 0px;
   margin-top: 22px;
   margin-bottom: 35px;
+}
+
+.feture-content {
+  margin-top: 90px;
+}
+
+.feture-content-menu a {
+  font-size: 1.375em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.feture-content-menu a:hover {
+  color: #ff2d2d;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+
+.feture-content-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.feture-cards {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.feture-cards .card {
+  border: 2px solid rgba(246, 242, 242, 0.9);
+  -webkit-box-shadow: 0px -10px 30px -30px black;
+  box-shadow: 0px -10px 30px -30px black;
+  overflow: hidden;
+  width: 300px;
+  height: 290px;
+  margin-bottom: 20px;
+  background-color: #f5f0dd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feture-cards .card-goods {
+  background-size: auto;
+  width: 276px;
+  height: 256px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,6 +33,10 @@ li {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .hr {
@@ -45,6 +49,12 @@ a {
   height: 2px;
   width: 130px;
   background-color: $btnBgColor;
+  transition: width ease-in-out 1s;
+
+  &:hover{
+    transition: width ease-in-out 1s;
+    width: 300px;
+  }
 }
 
 .btn-default {
@@ -178,10 +188,53 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    p{
+    p {
       @include alphaPar(0.7);
       margin-top: 22px;
       margin-bottom: 35px;
+    }
+  }
+  &-content {
+    margin-top: 90px;
+    &-menu {
+      a {
+        font-size: 1.375em;
+        @include alphaPar(0.7);
+        transition: color ease 0.3s;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:hover {
+          color: $btnBgColor;
+          transition: color ease 0.3s;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &-cards {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card {
+      border: 2px solid rgba($headBgColor, 0.9);
+      box-shadow: 0px -10px 30px -30px rgba(0, 0, 0, 1);
+      overflow: hidden;
+      width: 300px;
+      height: 290px;
+      margin-bottom: 20px;
+      background-color: #f5f0dd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-goods {
+        background-size: auto;
+        width: 276px;
+        height: 256px;
+      }
     }
   }
 }
