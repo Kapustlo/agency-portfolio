@@ -1,3 +1,10 @@
+.title-p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -235,15 +242,9 @@ h2 {
   flex-direction: column;
 }
 
-.feture-title p {
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 0px;
-  margin-top: 22px;
-  margin-bottom: 35px;
-}
-
 .feture-content {
   margin-top: 90px;
+  margin-bottom: 120px;
 }
 
 .feture-content-menu a {
@@ -309,6 +310,102 @@ h2 {
   background-size: auto;
   width: 276px;
   height: 256px;
+}
+
+.team-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+.team-title p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.team-content img {
+  width: 320px;
+  height: 460px;
+}
+
+.team-content h5 {
+  padding-top: 15px;
+  font-size: 1.875em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.team-content p {
+  margin-top: 38px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0px;
+}
+
+.team-content-menu {
+  margin-top: 48px;
+}
+
+.team-content-menu li {
+  margin-right: 30px;
+}
+
+.team-content-menu li:last-child {
+  margin-right: 0;
+}
+
+.team-content-menu a {
+  color: #000000;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0px;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+  font-style: italic;
+}
+
+.team-content-menu a:hover {
+  color: #8d8d8d;
+  -webkit-transition: color ease 0.3s;
+  -o-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+
+.team-others {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.team-others-person {
+  width: 170px;
+  height: 180px;
+  background-color: #f5f0dd;
+  overflow: hidden;
+}
+
+.team-others-person img {
+  width: 170px;
+  height: 180px;
 }
 
 /*# sourceMappingURL=style.css.map */

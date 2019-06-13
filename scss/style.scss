@@ -14,6 +14,12 @@ $btnBgColor: #ff2d2d;
 
 // Global Settings
 
+.title-p {
+  @include alphaPar(0.7);
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -51,7 +57,7 @@ a {
   background-color: $btnBgColor;
   transition: width ease-in-out 1s;
 
-  &:hover{
+  &:hover {
     transition: width ease-in-out 1s;
     width: 300px;
   }
@@ -188,14 +194,10 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    p {
-      @include alphaPar(0.7);
-      margin-top: 22px;
-      margin-bottom: 35px;
-    }
   }
   &-content {
     margin-top: 90px;
+    margin-bottom: 120px;
     &-menu {
       a {
         font-size: 1.375em;
@@ -234,6 +236,75 @@ h2 {
         background-size: auto;
         width: 276px;
         height: 256px;
+      }
+    }
+  }
+}
+
+.team {
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    margin-bottom: 70px;
+  }
+  &-content {
+    img {
+      width: 320px;
+      height: 460px;
+    }
+    h5 {
+      padding-top: 15px;
+      font-size: 1.875em;
+      @include alphaPar(0.8);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    p {
+      margin-top: 38px;
+
+      @include alphaPar(0.7);
+    }
+    &-menu {
+      margin-top: 48px;
+      li {
+        margin-right: 30px;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: #000000;
+        @include alphaPar(0.8);
+        transition: color ease 0.3s;
+        font-style: italic;
+        &:hover {
+          color: rgb(141, 141, 141);
+          transition: color ease 0.3s;
+        }
+      }
+    }
+  }
+  &-others {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    &-person {
+      width: 170px;
+      height: 180px;
+      background-color: #f5f0dd;
+      overflow: hidden;
+      img {
+        width: 170px;
+        height: 180px;
       }
     }
   }
