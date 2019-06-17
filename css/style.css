@@ -319,6 +319,10 @@ h2 {
   height: 256px;
 }
 
+.team {
+  padding-bottom: 1rem;
+}
+
 .team-title {
   display: -webkit-box;
   display: -ms-flexbox;
