@@ -194,6 +194,13 @@ h2 {
   background-color: transparent;
   color: #ff2d2d;
   border: #ff2d2d solid 2px;
+  transition: 1s;
+}
+
+.whywe-left-side .btn-whywe:hover {
+  background-color: #ff2d2d;
+  color: #ffffff;
+  transition: 1s;
 }
 
 .whywe-section {
